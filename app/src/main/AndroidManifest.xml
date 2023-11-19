@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huawei.mlkit.sample">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+      <!--  <activity android:name=".BaseActivity" />
+        <activity android:name=".Gesture2Activity">-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- bace -->
+        <activity
+            android:name=".activity.getsture.GestureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GestureImageActivity"
+            android:screenOrientation="portrait" />
+        <receiver android:name="com.huawei.mlkit.sample.AlarmService.LoongggAlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.ykapp"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.huawei.mlkit.sample.Intent.GuguanjieDetail">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.activity.getsture.Gesture2Activity">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.AlarmService.ClockAlarmActivity">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.Intent.ShowActivity">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.Intent.XunlianAlarm">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.Intent.BalenceDetail">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.LoginService">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.Vedio.VedioPlayer">
+        </activity>
+
+        <activity android:name="com.huawei.mlkit.sample.PersonInfo.PersonInfoActivity">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.AlarmService.AlarmingService">
+        </activity>
+        <activity android:name="com.huawei.mlkit.sample.PersonInfo.ChangePersonInfoAcitivity">
+        </activity>
+        <activity android:name=".activity.skeleton.HumanSkeletonActivity">
+        </activity>
+        <activity android:name=".Fragment.ShowDataFragment">
+        </activity>
+
+    </application>
+</manifest>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <SearchView
+        android:layout_marginTop="40dp"
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入搜索内容" />
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <FrameLayout
+        android:layout_marginTop="95dp"
+        android:layout_width="match_parent"
+        android:layout_height="290dip" >
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片标题"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_yes"/>
+
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_no"/>
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_no"/>
+                <View
+                    android:id="@+id/dot_3"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_no"/>
+                <View
+                    android:id="@+id/dot_4"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@drawable/dot_no"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+<!--第一列-->
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="90dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+        <!--传统美术-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="专题介绍"
+            android:textColor="#191919"
+            android:textSize="19dp" />
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.6dp"
+            android:text="关节活动"
+            android:textColor="#191919"
+            android:textStyle="normal"></TextView>-->
+        <!--传统音乐-->
+
+        <ImageView
+            android:id="@+id/ggj"
+            android:layout_width="73dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:onClick="trans"
+            android:src="@drawable/gj" />
+
+        <ImageView
+            android:id="@+id/jl"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/jl" />
+
+        <!--  <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6.6dp"
+            android:text="肌力训练"
+            android:textColor="#191919"
+            android:textStyle="normal"></TextView>-->
+    </LinearLayout>
+<!--第二列-->
+
+    <!--第三列-->
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="90dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+        <!--传统民俗-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    "
+            android:textColor="#191919"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:id="@+id/ph"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:onClick="balance_trance"
+            android:src="@drawable/ph" />
+
+        <!--   <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6.6dp"
+            android:text="平衡训练"
+            android:textColor="#191919"
+            android:textStyle="normal"></TextView>-->
+        <!--传统戏剧-->
+        <ImageView
+            android:id="@+id/yyxl"
+            android:layout_width="76dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/yy" />
+
+        <!--        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6.6dp"
+            android:text="有氧训练"
+            android:textColor="#191919"
+            android:textStyle="normal"></TextView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:layout_width="90dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    "
+            android:textColor="#191919"
+            android:textSize="19dp" />
+        <!--牵张训练-->
+
+        <!--  <TextView
+              android:layout_width="70dp"
+              android:layout_height="20dp"
+              android:layout_marginLeft="6.6dp"
+              android:text="牵张训练"
+              android:textColor="#191919"
+              android:textStyle="normal"></TextView>-->
+        <!--传统杂技-->
+        <ImageView
+            android:id="@+id/qz"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="-7dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:src="@drawable/qz" />
+
+        <ImageView
+            android:id="@+id/gz"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/gz" />
+
+        <!--   <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="6.6dp"
+            android:text="感知训练"
+            android:textColor="#191919"
+            android:textStyle="normal"></TextView>-->
+    </LinearLayout>
+<!--第四列-->
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:layout_width="90dp"
+        android:layout_height="280dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    "
+            android:textColor="#191919"
+            android:textSize="19dp" />
+        <!--步行训练-->
+
+        <!--   <TextView
+               android:layout_width="70dp"
+               android:layout_height="20dp"
+               android:layout_marginLeft="10dp"
+               android:text="步行训练"
+               android:textColor="#191919"
+               android:textStyle="normal"></TextView>-->
+        <!--连续被动活动训练-->
+        <ImageView
+            android:id="@+id/bx"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:src="@drawable/bx" />
+
+        <ImageView
+            android:id="@+id/cpm"
+            android:layout_width="74dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/cpm" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="700dp"
+        android:background="?android:attr/listDivider" />
+</RelativeLayout>

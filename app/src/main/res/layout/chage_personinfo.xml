@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/balence_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="信息修改"
+        app:titleTextColor="#ffffff"
+        android:background="#2543a5">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/change_item"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+         android:layout_height="40dp">
+    </TextView>
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"></EditText>
+
+        <Button
+            android:id="@+id/modify_personinfo"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="#07be8b"
+            android:text="修改"
+            android:textColor="#ffffff">
+
+        </Button>
+    </LinearLayout>
+    <!--    <EditText-->
+<!--    android:id="@+id/edit_phone"-->
+<!--    android:layout_width="300dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="修改电话号码">-->
+<!--    </EditText>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edit_age"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="修改年龄">-->
+<!--    </EditText>-->
+<!--    <EditText-->
+<!--        android:text="男"-->
+<!--        android:id="@+id/edit_sex"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="修改性别">-->
+<!--    </EditText>-->
+</LinearLayout>

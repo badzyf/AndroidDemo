@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ykapp.MainActivity"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/list_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#2543a5"
+        app:titleTextColor="#ffffff"></androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:id="@+id/psersoninfo_list"
+        >
+    </ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的底部导航栏字体颜色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#1296db" android:state_selected="true" />
+    <item android:color="#f173ac" android:state_selected="false"/>
+</selector>

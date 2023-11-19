@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/balance_detail_layout"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0px"
+        android:orientation = "vertical"
+        >
+        <!--标题栏-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/balence_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2543a5">
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:id="@+id/text1_balance"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textStyle="bold" >
+        </TextView>
+        <ImageView
+            android:id="@+id/image1_balance"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="10dp">
+        </ImageView>
+
+        <TextView
+          android:id="@+id/text2_balance"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      </TextView>
+
+        <ImageView
+            android:id="@+id/image2_balance"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="50dp"></ImageView>
+
+        <TextView
+            android:id="@+id/text3_balance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image3_balance"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="50dp"></ImageView>
+
+        <ImageView
+            android:id="@+id/image4_balance"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="50dp">
+        </ImageView>
+        <TextView
+            android:id="@+id/text4_balance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </TextView>
+    </LinearLayout>
+</ScrollView>

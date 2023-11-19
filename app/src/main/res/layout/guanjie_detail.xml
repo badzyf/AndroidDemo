@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.ykapp.MainActivity"
+    android:gravity="center"
+    android:background="#ffffff">
+    <LinearLayout
+        android:id="@+id/linerlayout1"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0px"
+        android:orientation = "vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2543a5">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:background="#ffffff"
+            android:ellipsize="marquee"
+            android:focusable="false"
+
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:textColor="#111111"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ggjt1"></ImageView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="386dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:background="#ffffff"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="四肢关节功能康复的主要目的是恢复上肢的灵活抓取功能和下肢的稳定负重行走功能。
+        正规系统的骨关节功能康复要求以骨科医生为主导的多学科、多专业人员组成一个工作团队来进行，叫作“团队康复模式”(图1)。国内真正能做到团队式骨关节功能康复的医院不多。中国康复研究中心·
+        北京博爱医院骨科作为全国一流的骨关节功能康复与重建科室，拥有这样的实力，在骨关节功能康复与重建领域处于全国领先水平。
+        目前只有二百余人能唱一些不完整的古歌，而且都是中老年人"
+            android:textColor="#111111"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="402dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="50dp">
+        </ImageView>
+    </LinearLayout>
+
+</ScrollView>

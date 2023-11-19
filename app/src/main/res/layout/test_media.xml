@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--标题栏-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/kfxlmv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#2543a5">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/kfxlmv_title"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:textStyle="bold">
+    </TextView>
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/jiecao_Player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>
